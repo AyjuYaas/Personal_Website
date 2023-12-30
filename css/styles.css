@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: "Oswald", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+hr {
+  border: dotted #69a2bd 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+h2,
+h3,
+a {
+  color: #073b4c;
+}
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+.top-container {
+  background-color: #8ecae6;
+  color: #023047;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  padding-top: 120px;
+  position: relative;
+  width: 100%;
+}
+.top-container h1 {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 4.375rem; /* 70px */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.top-container h2 {
+  color: #33506c;
+  font-size: 2.5rem; /* 40px */
+  font-weight: normal;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+}
+
+.top-cloud {
+  position: absolute;
+  right: 20%;
+  top: 100px;
+}
+.bottom-cloud {
+  left: 12%;
+  position: absolute;
+  top: 60%;
+}
+.island {
+  position: absolute;
+  bottom: -120px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+.middle-container {
+  margin-top: 100px;
+}
+.profile img {
+  height: 200px;
+}
+.profile h2 {
+  font-size: 1.875rem; /* 30px */
+  margin-top: 30px;
+}
+.profile p {
+  font-size: 1.25rem; /* 20px */
+  margin: 20px auto;
+  width: 31.25rem; /* 500px */
+}
+
+.projects h2 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: normal;
+}
+.project-box {
+  background-color: #023047;
+  border-radius: 50px;
+  line-height: 2;
+  margin: 50px auto;
+  padding: 40px 60px;
+  text-align: left;
+  width: 26.35rem; /* 450px */
+}
+.project-box:hover {
+  background-color: #182634;
+}
+.project-box p,
+.project-box h3 {
+  color: aliceblue;
+  font-weight: normal;
+}
+.project-box h3 {
+  color: #ffb703;
+  font-weight: bold;
+}
+.project-box p {
+  font-weight: lighter;
+}
+.project-box img {
+  background-color: aliceblue;
+  border-radius: 50%;
+  height: 80%;
+  margin-right: 20px;
+}
+.extension img {
+  float: left;
+}
+.weather img {
+  float: right;
+  margin-left: 20px;
+}
+.extension p,
+.extension h3,
+.aqi p,
+.aqi h3 {
+  margin-left: 100px;
+}
+.weather p,
+.weather h3 {
+  margin-right: 100px;
+}
+.aqi img {
+  float: left;
+}
+
+.contact-me h2 {
+  font-size: 1.875rem; /* 30px */
+  font-weight: normal;
+}
+.contact-me h3 {
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+.contactme-btn {
+  background-color: #023047;
+  border: none;
+  border-radius: 10px;
+  color: aliceblue;
+  font-weight: bold;
+  height: 30px;
+  padding: 10px 30px 10px 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  width: 150px;
+}
+.contactme-btn:hover {
+  background-color: #69a2bd;
+  color: #023047;
+}
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+.bottom-container {
+  background-color: #023047;
+  color: aliceblue;
+  height: 130px;
+  margin-top: 100px;
+  overflow: hidden;
+  padding: 30px;
+}
+.bottom-container a {
+  margin: 10px 30px;
+}
+.statement {
+  margin-bottom: 50px;
+}
+.copyright {
+  font-size: 12px;
+  font-weight: none;
+  margin-top: 30px;
+}
+
+.shine {
+  border: 0;
+  height: 3px;
+  width: 30%;
+  margin: 150px auto 150px auto;
+  background-image: linear-gradient(
+    to right,
+    #f0f0f0,
+    #00b9ff,
+    #59d941,
+    #f0f0f0
+  );
+}
+
+.cme:hover {
+  transform: scale(1.5);
+}
+
+/* -------------------------------------------------------------- */
+/* -------------------------------------------------------------- */
+@media all and (max-width: 800px) {
+  .top-container h1 {
+    top: 42%;
+  }
+  .top-container h2 {
+    top: 60%;
+    left: 40%;
+  }
+}
+@media all and (max-width: 850px) {
+  .island {
+    display: none;
+  }
+  .top-container h2 {
+    top: 65%;
+  }
+  .bottom-cloud {
+    display: initial;
+  }
+  .profile p {
+    width: 300px;
+  }
+  .project-box {
+    width: 200px;
+  }
+  .bottom-cloud {
+    display: none;
+  }
+  .aqi img,
+  .weather img,
+  .extension img {
+    float: none;
+  }
+  .aqi p,
+  .weather p,
+  .extension p,
+  .aqi h3,
+  .weather h3,
+  .extension h3 {
+    margin: 0;
+  }
+}
+
+@media all and (max-width: 410px) {
+  .top-container h2 {
+    top: 70%;
+    left: 30%;
+  }
+  .island {
+    display: none;
+  }
+}
